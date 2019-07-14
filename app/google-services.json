@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "552260349902",
+    "firebase_url": "https://tasteit-17937.firebaseio.com",
+    "project_id": "tasteit-17937",
+    "storage_bucket": "tasteit-17937.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552260349902:android:42fe98df717f2233",
+        "android_client_info": {
+          "package_name": "com.kasun.tasteit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552260349902-3q5q6l2p50r9291qpo07l6p2ccvhebgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl-kz-i6XpbpPYxVA-pfpWdCIeR7ZKzC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552260349902-3q5q6l2p50r9291qpo07l6p2ccvhebgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
