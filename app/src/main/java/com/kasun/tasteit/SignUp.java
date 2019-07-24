@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -27,7 +28,7 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        edtName = (MaterialEditText)findViewById(R.id.edtName);
+        edtName = (MaterialEditText) findViewById(R.id.edtName);
         edtPassword = (MaterialEditText)findViewById(R.id.edtPassword);
         edtPhone = (MaterialEditText)findViewById(R.id.edtPhone);
 
