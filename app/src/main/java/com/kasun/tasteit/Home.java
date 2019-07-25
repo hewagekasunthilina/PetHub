@@ -13,23 +13,41 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.kasun.tasteit.Common.Common;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
+import android.widget.TextView;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FirebaseDatabase database;
+    DatabaseReference category;
+    TextView txtFullName;
+    RecyclerView recycler_menu;
+    RecyclerView.LayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //Init Firebase
+
+        database = FirebaseDatabase.getInstance();
+        category = database.getReference("Category");
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +63,14 @@ public class Home extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Set name for the user
+
+        View headerView = navigationView.getHeaderView(0);
+        txtFullName = (TextView)findViewById(R.id.txtFullName);
+        txtFullName.setText(Common.currentUser.getName());
+
+        //Load Menu
     }
 
     @Override
