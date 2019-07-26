@@ -8,6 +8,10 @@
     tools:context="com.kasun.tasteit.Home"
     tools:showIn="@layout/app_bar_home">
 
+    <android.suuport.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+    </android.suuport.v7.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
