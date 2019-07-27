@@ -4,15 +4,20 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import android.support.v7.widget.RecyclerView;
 
-    public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.kasun.tasteit.R;
+
+public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         public TextView txtMenuName;
         public ImageView imageView;
 
         public MenuViewHolder(View itemView){
             super(itemView);
+
+            txtMenuName = (TextView)itemView.findViewById(R.id.txtFullName);
 
         }
         @Override
