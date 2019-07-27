@@ -17,6 +17,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kasun.tasteit.Common.Common;
+import com.kasun.tasteit.Interface.ItemClickListner;
 import com.kasun.tasteit.Model.Category;
 import com.kasun.tasteit.ViewHolder.MenuViewHolder;
 import com.squareup.picasso.Picasso;
@@ -30,6 +31,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -73,7 +75,7 @@ public class Home extends AppCompatActivity
         //Set name for the user
 
         View headerView = navigationView.getHeaderView(0);
-        txtFullName = (TextView)findViewById(R.id.txtFullName);
+        txtFullName = (TextView)headerView.findViewById(R.id.txtFullName);
         txtFullName.setText(Common.currentUser.getName());
 
         //Load Menu
@@ -89,13 +91,22 @@ public class Home extends AppCompatActivity
 
         FirebaseRecyclerAdapter<Category, MenuViewHolder> adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.menu_item,MenuViewHolder.class,category) {
             @Override
-            protected void populateViewHolder(MenuViewHolder viewHolder, Category category, int i) {
+            protected void populateViewHolder(MenuViewHolder viewHolder, Category model, int position) {
 
                 viewHolder.txtMenuName.setText(model.getName());
-                Picasso.with(getBaseContext().load(model.getImage())).into(viewHolder.imageView);
+                Picasso.with(getBaseContext()).load(model.getImage()).into(viewHolder.imageView);
+
+                final Category clickItem = model;
+                viewHolder.setItemClickListner(new ItemClickListner() {
+                    @Override
+                    public void onClick(View view, int position, boolean isLongClick) {
+                        Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+                    }
+                });
 
             }
         };
+        recycler_menu.setAdapter(adapter);
     }
 
     @Override
