@@ -2,6 +2,7 @@ package com.kasun.tasteit;
 
 import android.os.Bundle;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -16,11 +17,15 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kasun.tasteit.Common.Common;
+import com.kasun.tasteit.Model.Category;
+import com.kasun.tasteit.ViewHolder.MenuViewHolder;
+import com.squareup.picasso.Picasso;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
@@ -72,6 +77,25 @@ public class Home extends AppCompatActivity
         txtFullName.setText(Common.currentUser.getName());
 
         //Load Menu
+        recycler_menu = (RecyclerView)findViewById(R.id.recycler_menu);
+        recycler_menu.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recycler_menu.setLayoutManager(layoutManager);
+
+        loadMenu();
+    }
+
+    private void loadMenu(){
+
+        FirebaseRecyclerAdapter<Category, MenuViewHolder> adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.menu_item,MenuViewHolder.class,category) {
+            @Override
+            protected void populateViewHolder(MenuViewHolder viewHolder, Category category, int i) {
+
+                viewHolder.txtMenuName.setText(model.getName());
+                Picasso.with(getBaseContext().load(model.getImage())).into(viewHolder.imageView);
+
+            }
+        };
     }
 
     @Override
