@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnSignUp = (Button)findViewById(R.id.btnSignUp);
 
         slogan = (TextView)findViewById(R.id.slogan);
-        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/Nabila.ttf");
+        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/OpenSans-ExtraBold.ttf");
         slogan.setTypeface(face);
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {

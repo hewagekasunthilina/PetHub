@@ -16,7 +16,7 @@
     <ImageView
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:src="@drawable/logo1" />
+        android:src="@drawable/new_logo" />
 
     <TextView
         android:id="@+id/slogan"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/slogan"
-        android:textColor="#F0A732"
-        android:textSize="36sp" />
+        android:textColor="#fc9247"
+        android:textSize="30sp" />
 </LinearLayout>
 
     <LinearLayout
