@@ -18,7 +18,7 @@
         android:id="@+id/txtFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:paddingTop="16dp"
         android:text="Kasun"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 

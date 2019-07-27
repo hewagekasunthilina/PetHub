@@ -14,10 +14,21 @@
 
         <ImageView
             android:id="@+id/menu_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/background"
-            android:layout_width = "match_parent"
-            android:layout_height = "match_parent"/>
+            android:src="@drawable/back2" />
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:text="Name of Menu"
+            android:textColor="@android:color/white"
+            android:background="@color/overlayBackground"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
