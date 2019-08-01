@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:app ="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            android:contentDescription="@android:string/autofill"
             android:src="@drawable/back2" />
 
         <TextView
@@ -32,4 +33,4 @@
 
     </RelativeLayout>
 
-</android.support.v7.widget.CardView>
+</android.support.v7.CardView>
