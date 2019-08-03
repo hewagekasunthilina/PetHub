@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
+    android:background="@drawable/pet_background3"
     tools:context=".SignIn">
 
     <LinearLayout
@@ -31,6 +31,7 @@
         app:met_maxCharacters="11"
         app:met_primaryColor="@android:color/white"
         app:met_singleLineEllipsis="true"
+        android:layout_marginLeft="60dp"
 
         />
 
@@ -49,13 +50,14 @@
             app:met_maxCharacters="11"
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
+            android:layout_marginLeft="60dp"
 
             />
     </LinearLayout>
 
     <info.hoang8f.widget.FButton
         android:id="@+id/btnSignIn"
-        android:text="Sign In"
+        android:text="@string/sign_in_button"
         android:textColor="@android:color/white"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"

@@ -4,29 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="@drawable/pet_background3"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_centerInParent="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-    <ImageView
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:src="@drawable/new_logo" />
-
-    <TextView
-        android:id="@+id/slogan"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/slogan"
-        android:textColor="#fc9247"
-        android:textSize="30sp" />
-</LinearLayout>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="190dp"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -37,7 +29,7 @@
         
         <info.hoang8f.widget.FButton
             android:id="@+id/btnSignUp"
-            android:text="Sign Up"
+            android:text="@string/sign_up_button"
             android:textColor="@android:color/white"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -50,7 +42,7 @@
 
         <info.hoang8f.widget.FButton
             android:id="@+id/btnSignIn"
-            android:text="Sign In"
+            android:text="@string/sign_in_button"
             android:textColor="@android:color/white"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -61,5 +53,19 @@
             app:shadowHeight="5dp"
             />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="211dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="310dp"
+        app:srcCompat="@drawable/official_logo" />
 
 </RelativeLayout>

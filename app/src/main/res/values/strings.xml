@@ -16,6 +16,14 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
+    <string name="txtdashboard">My Dashboard</string>
+    <string name="pet_manager">Manage Pets</string>
+    <string name="food_manager">Manage Foods</string>
+    <string name="equipment_manager">Equipments</string>
+
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_up_button">Sign Up</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
