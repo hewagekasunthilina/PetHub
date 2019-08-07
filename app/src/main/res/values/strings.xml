@@ -24,6 +24,11 @@
     <string name="sign_in_button">Sign In</string>
     <string name="sign_up_button">Sign Up</string>
 
+    <string name="nickname">Enter Nickname</string>
+    <string name="age">Enter Age</string>
+    <string name="familyname">Enter Family Name</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

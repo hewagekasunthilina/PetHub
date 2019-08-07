@@ -71,4 +71,18 @@
         app:shadowHeight="5dp"
         />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@+id/btnSignIn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="520dp"
+        app:srcCompat="@drawable/avatar" />
+
 </RelativeLayout>
