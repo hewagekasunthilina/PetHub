@@ -17,12 +17,14 @@
 
         <TextView
             android:id="@+id/rTitleTv"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bree_serif"
             android:text="@string/category_title"
             android:textColor="#000"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/rImageView"
@@ -34,11 +36,12 @@
 
         <TextView
             android:id="@+id/rDescriptionTc"
-            android:text="@string/description"
-            android:textSize="22sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+
+            android:fontFamily="@font/sofia"
+            android:text="@string/description"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
