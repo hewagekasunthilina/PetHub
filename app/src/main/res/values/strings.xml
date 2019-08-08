@@ -1,4 +1,7 @@
 <resources>
+
+    <!-- IT 18197624 Bamunuge H.K.T -->
+
     <string name="app_name">PetHub</string>
     <string name="slogan">Now That Your Tastes Have Grown Up!</string>
     <string name="title_activity_home">Home</string>
@@ -27,6 +30,16 @@
     <string name="nickname">Enter Nickname</string>
     <string name="age">Enter Age</string>
     <string name="familyname">Enter Family Name</string>
+
+    <string name="description">This will be a description of each category</string>
+    <string name="category_title">Title</string>
+
+    <string name="search_bar">Search</string>
+    <string name="settings">Settings</string>
+
+
+
+    <!-- IT 18197624 Bamunuge H.K.T -->
 
 
     <!-- TODO: Remove or change this placeholder text -->

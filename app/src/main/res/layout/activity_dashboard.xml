@@ -64,11 +64,13 @@
                     android:layout_height="match_parent"
                     >
                     <ImageView
+
                         android:src="@drawable/pet"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
                     <TextView
+                        android:id="@+id/arr"
                         android:text="@string/pet_manager"
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
@@ -103,9 +105,10 @@
                         android:layout_height="80dp" />
 
                     <TextView
+                        android:id="@+id/arr1"
                         android:text="@string/food_manager"
                         android:layout_marginTop="12dp"
-                        android:textColor="#000000"
+                        android:textColor="#6f6f6f"
                         android:textSize="18sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
