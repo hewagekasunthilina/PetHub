@@ -1,4 +1,4 @@
-package com.kasun.tasteit.Model;
+package com.kasun.tasteit;
 
 public class User {
     private String Name;

@@ -7,20 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class dashboard extends AppCompatActivity {
 
-    ImageButton imgButton;
+    TextView txtbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        imgButton = (ImageButton)findViewById(R.id.arr);
-        imgButton.setOnClickListener(new View.OnClickListener() {
+        txtbtn = (TextView) findViewById(R.id.arr);
+        txtbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(dashboard.this, category_list.class);
                 startActivity(intent);
 

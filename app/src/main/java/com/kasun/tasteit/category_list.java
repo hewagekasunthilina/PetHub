@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
@@ -32,14 +33,14 @@ public class category_list extends AppCompatActivity {
         mrecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getReference();
+        mRef = mFirebaseDatabase.getReference("Category");
     }
 
     public void onStart(){
         super.onStart();
 
-        FirebaseRecyclerAdapter<Models, ViewHolder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<Models, ViewHolder>(
+        FirebaseRecyclerAdapter<Models, ViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Models, ViewHolder>(
+
                         Models.class,
                         R.layout.row,
                         ViewHolder.class,

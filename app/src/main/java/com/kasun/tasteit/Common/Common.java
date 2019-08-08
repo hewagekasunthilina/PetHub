@@ -1,6 +1,6 @@
 package com.kasun.tasteit.Common;
 
-import com.kasun.tasteit.Model.User;
+import com.kasun.tasteit.User;
 
 public class Common {
 
