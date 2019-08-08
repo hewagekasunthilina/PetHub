@@ -17,7 +17,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kasun.tasteit.Common.Common;
-import com.kasun.tasteit.Model.User;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class SignIn extends AppCompatActivity {

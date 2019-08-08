@@ -16,41 +16,41 @@
         android:layout_height="wrap_content">
 
 
-    <com.rengwuxian.materialedittext.MaterialEditText
-        android:id="@+id/edtPhone"
-        android:hint="Phone Number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@android:color/white"
-        android:text="0770828319"
-        android:textColor="@android:color/white"
-        android:textSize="34sp"
-        android:inputType="phone"
-        app:met_baseColor="@android:color/white"
-        app:met_floatingLabel="highlight"
-        app:met_maxCharacters="11"
-        app:met_primaryColor="@android:color/white"
-        app:met_singleLineEllipsis="true"
-        android:layout_marginLeft="60dp"
-
-        />
-
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/edtPassword"
-            android:hint="Password"
-            android:layout_width="match_parent"
+            android:id="@+id/edtPhone"
+            android:layout_width="258dp"
             android:layout_height="wrap_content"
-            android:textColorHint="@android:color/white"
-            android:text="kasun123"
+            android:layout_marginLeft="90dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:text="0770828319"
             android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
             android:textSize="34sp"
-            android:inputType="textPassword"
             app:met_baseColor="@android:color/white"
             app:met_floatingLabel="highlight"
             app:met_maxCharacters="11"
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
-            android:layout_marginLeft="60dp"
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="kasun123"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="34sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
 
             />
     </LinearLayout>
@@ -70,5 +70,19 @@
         app:shadowColor="@android:color/black"
         app:shadowHeight="5dp"
         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="229dp"
+        android:layout_height="220dp"
+        android:layout_alignBottom="@+id/btnSignIn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="467dp"
+        app:srcCompat="@drawable/avatar" />
 
 </RelativeLayout>
