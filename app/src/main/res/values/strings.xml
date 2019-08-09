@@ -50,6 +50,12 @@
     <string name="image">Image</string>
     <string name="addImage">UPLOAD</string>
     <string name="addeq">ADD EQUIPMENT</string>
+    <string name="btncage">CAGES</string>
+    <string name="btnchains">CHAINS</string>
+    <string name="btncombs">COMBS</string>
+    <string name="btntoys">TOYS</string>
+    <string name="btnscarfs">SCARFS</string>
+    <string name="categoryName">CATEGORY VIEW</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

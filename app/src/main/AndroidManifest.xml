@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddEquipment"></activity>
+        <activity android:name=".CatogeryView"></activity>
+        <activity android:name=".AddEquipment" />
         <activity android:name=".category_list" />
         <activity android:name=".add_pet" />
         <activity android:name=".dashboard" />
