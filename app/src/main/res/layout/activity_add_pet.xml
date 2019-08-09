@@ -82,6 +82,7 @@
         android:textColorHint="@color/colorPrimary">
 
         <EditText
+            android:id="@+id/et_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Birth Date"

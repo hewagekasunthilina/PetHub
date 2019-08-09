@@ -18,7 +18,6 @@
         <TextView
             android:id="@+id/rTitleTv"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
             android:fontFamily="@font/bree_serif"
             android:text="@string/category_title"

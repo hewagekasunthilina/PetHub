@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class dashboard extends AppCompatActivity {
 
     TextView txtbtn;
+    TextView txtbtn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,15 @@ public class dashboard extends AppCompatActivity {
                 Intent intent = new Intent(dashboard.this, category_list.class);
                 startActivity(intent);
 
+            }
+        });
+
+        txtbtn2 = (TextView) findViewById(R.id.arr1);
+        txtbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(dashboard.this, add_pet.class);
+                startActivity(intent1);
             }
         });
     }
