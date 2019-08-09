@@ -9,7 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57d32697-bf53-4168-a67a-b82c5127f720" name="Default Changelist" comment="" />
+    <list default="true" id="57d32697-bf53-4168-a67a-b82c5127f720" name="Default Changelist" comment="idea removed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,14 +70,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1" />
-          <entry key="txt" value="39" />
+          <entry key="txt" value="51" />
           <entry key="xml" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="XML" value="109" />
         </counts>
       </usages-collector>
@@ -2528,6 +2530,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="Pixel_2_API_27" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -2776,7 +2779,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565373823691</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="idea remove">
+      <created>1565377193318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565377193332</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2860,7 +2870,8 @@
     <MESSAGE value="medicine page add" />
     <MESSAGE value="medicine page update" />
     <MESSAGE value="medicine page update button" />
-    <option name="LAST_COMMIT_MESSAGE" value="medicine page update button" />
+    <MESSAGE value="idea remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea remove" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
