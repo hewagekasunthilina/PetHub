@@ -38,10 +38,26 @@
     <string name="settings">Settings</string>
 
 
-
     <!-- IT 18197624 Bamunuge H.K.T -->
+
+
+    <!-- IT 18165258 Rajapakshe R.M.P.R.L-->
+
+    <string name="medicine_title">Categories</string>
+    <string name="medicine_category">Pet Medicine</string>
+    <string name="Medicine_search">search</string>
+    <string name="view_button">All products</string>
+
+    <string name="medicine_text">FLEA TREATMENT</string>
+    <string name="medicine_dog">DOG</string>
+    <string name="medicine_cat">CAT</string>
+    <string name="medicine_worms">WORMERS</string>
+    <!-- IT 18165258 Rajapakshe R.M.P.R.L-->
 
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
 </resources>
