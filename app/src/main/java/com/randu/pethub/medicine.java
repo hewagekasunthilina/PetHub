@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.kasun.tasteit.R;
+
 public class medicine extends AppCompatActivity {
 
     @Override
