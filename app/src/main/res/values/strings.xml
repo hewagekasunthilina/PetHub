@@ -39,6 +39,23 @@
 
 
     <!-- IT 18197624 Bamunuge H.K.T -->
+    <!-- IT 17059428 AMarasinghe A.A.S.M -->
+
+    <string name="equipment">EQUIPMENT</string>
+    <string name="equipmentName">Name</string>
+    <string name="owner">Owner Name</string>
+    <string name="contact">Contact Number</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="image">Image</string>
+    <string name="addImage">UPLOAD</string>
+    <string name="addeq">ADD EQUIPMENT</string>
+    <string name="btncage">CAGES</string>
+    <string name="btnchains">CHAINS</string>
+    <string name="btncombs">COMBS</string>
+    <string name="btntoys">TOYS</string>
+    <string name="btnscarfs">SCARFS</string>
+    <string name="categoryName">CATEGORY VIEW</string>
 
 
     <!-- IT 18165258 Rajapakshe R.M.P.R.L-->

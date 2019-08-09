@@ -12,4 +12,13 @@
     <color name="overlayBackground">#7f333639</color>
     <color name="overlayActionBar">#0e0d0e</color>
 
+
+    <!-- IT17059428 Amarsinghe A.A.S.M -->
+
+
+    <color name="form">#39796b</color>
+    <color name="formhint">#00251a</color>
+    <color name="formName">#069941</color>
+
+
 </resources>
