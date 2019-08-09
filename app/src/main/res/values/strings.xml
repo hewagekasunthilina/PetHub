@@ -38,8 +38,18 @@
     <string name="settings">Settings</string>
 
 
-
     <!-- IT 18197624 Bamunuge H.K.T -->
+    <!-- IT 17059428 AMarasinghe A.A.S.M -->
+
+    <string name="equipment">EQUIPMENT</string>
+    <string name="equipmentName">Name</string>
+    <string name="owner">Owner Name</string>
+    <string name="contact">Contact Number</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="image">Image</string>
+    <string name="addImage">UPLOAD</string>
+    <string name="addeq">ADD EQUIPMENT</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
