@@ -69,12 +69,12 @@
     <string name="medicine_dog">DOG</string>
     <string name="medicine_cat">CAT</string>
     <string name="medicine_worms">WORMERS</string>
+    <string name="medicine_add">Add Items</string>
     <!-- IT 18165258 Rajapakshe R.M.P.R.L-->
 
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
 
 </resources>
