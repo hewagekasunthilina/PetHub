@@ -65,7 +65,7 @@
                     >
                     <ImageView
 
-                        android:src="@drawable/pet"
+                        android:src="@drawable/pets"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -174,7 +174,7 @@
                         android:layout_height="80dp" />
 
                     <TextView
-                        android:text="Calender"
+                        android:text="@string/medical_manager"
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
@@ -203,12 +203,12 @@
                     android:layout_height="match_parent"
                     >
                     <ImageView
-                        android:src="@drawable/new_logo"
+                        android:src="@drawable/feedback"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
                     <TextView
-                        android:text="Calender"
+                        android:text="@string/feedback_manager"
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
