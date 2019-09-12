@@ -140,7 +140,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="add pet"
         android:textSize="22sp"
         android:textColor="#ffffff"
         android:background="@drawable/button_rounded"
