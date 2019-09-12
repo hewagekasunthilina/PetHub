@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/formbackground"
+    android:background="@color/btnSignUp"
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".add_pet">
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -85,13 +84,14 @@
         android:textColorHint="@color/overlayActionBar">
 
         <EditText
+            android:id="@+id/et_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Birth Date"
+            android:layout_marginTop="5dp"
             android:ems="10"
+            android:hint="Enter Birth Date"
             android:inputType="text"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp"/>
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -146,4 +146,7 @@
         android:background="@drawable/button_rounded"
         android:layout_marginTop="40dp"/>
 
+
+
 </LinearLayout>
+
