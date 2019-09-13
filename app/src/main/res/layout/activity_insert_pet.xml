@@ -9,7 +9,7 @@
     tools:context=".insert_pet">
 
     <EditText
-        android:id="@+id/familyname"
+        android:id="@+id/equipmentname"
         android:layout_width="321dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.159" />
 
     <EditText
-        android:id="@+id/model"
+        android:id="@+id/ownername"
         android:layout_width="319dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.281" />
 
     <EditText
-        android:id="@+id/age"
+        android:id="@+id/price"
         android:layout_width="316dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -58,11 +58,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/model"
+        app:layout_constraintTop_toTopOf="@+id/ownername"
         app:layout_constraintVertical_bias="0.324" />
 
     <EditText
-        android:id="@+id/nickname"
+        android:id="@+id/contactnumber"
         android:layout_width="316dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
@@ -72,7 +72,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nickname"
-        app:layout_constraintBottom_toBottomOf="@+id/addpet"
+        app:layout_constraintBottom_toBottomOf="@+id/addequipment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.425" />
 
     <EditText
-        android:id="@+id/dob"
+        android:id="@+id/publishdate"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.631" />
 
     <EditText
-        android:id="@+id/breed"
+        android:id="@+id/description"
         android:layout_width="317dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
@@ -114,7 +114,7 @@
         app:layout_constraintVertical_bias="0.749" />
 
     <Button
-        android:id="@+id/addpet"
+        android:id="@+id/addequipment"
         android:layout_width="286dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -127,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/breed"
+        app:layout_constraintTop_toTopOf="@+id/description"
         app:layout_constraintVertical_bias="0.819" />
 
     <EditText

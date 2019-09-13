@@ -28,15 +28,15 @@ public class insert_pet extends AppCompatActivity {
 
         setTitle("Add New Pet");
 
-        familyname = (EditText) findViewById(R.id.familyname);
-        model = (EditText) findViewById(R.id.model);
-        age = (EditText) findViewById(R.id.age);
-        nickname = (EditText) findViewById(R.id.nickname);
-        dob = (EditText) findViewById(R.id.dob);
-        breed = (EditText) findViewById(R.id.breed);
+        familyname = (EditText) findViewById(R.id.equipmentname);
+        model = (EditText) findViewById(R.id.ownername);
+        age = (EditText) findViewById(R.id.price);
+        nickname = (EditText) findViewById(R.id.contactnumber);
+        dob = (EditText) findViewById(R.id.publishdate);
+        breed = (EditText) findViewById(R.id.description);
         gender = (EditText) findViewById(R.id.gender);
 
-        addpet = (Button) findViewById(R.id.addpet);
+        addpet = (Button) findViewById(R.id.addequipment);
 
         //Init Firebase
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
