@@ -13,6 +13,7 @@ public class dashboard extends AppCompatActivity {
 
     TextView txtbtn;
     TextView txtbtn2;
+    TextView txtbtn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +34,17 @@ public class dashboard extends AppCompatActivity {
         txtbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(dashboard.this, add_pet.class);
+                Intent intent1 = new Intent(dashboard.this, medicine_addItems.class);
                 startActivity(intent1);
+            }
+        });
+
+        txtbtn3 = (TextView) findViewById(R.id.arr3);
+        txtbtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(dashboard.this, insert_pet.class);
+                startActivity(intent2);
             }
         });
     }

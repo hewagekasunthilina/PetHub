@@ -4,14 +4,24 @@ public class Pet {
 
     private String FamilyName;
     private String Model;
-    private Integer age;
+    private String Age;
     private String NickName;
-    private String DateofBirth;
+    private String DOB;
     private String Breed;
     private String Gender;
 
     public Pet(){
 
+    }
+
+    public Pet(String familyName, String model, String age, String nickName, String DOB, String breed, String gender) {
+        FamilyName = familyName;
+        Model = model;
+        Age = age;
+        NickName = nickName;
+        this.DOB = DOB;
+        Breed = breed;
+        Gender = gender;
     }
 
     public String getFamilyName() {
@@ -30,12 +40,12 @@ public class Pet {
         Model = model;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getAge() {
+        return Age;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setAge(String age) {
+        Age = age;
     }
 
     public String getNickName() {
@@ -46,12 +56,12 @@ public class Pet {
         NickName = nickName;
     }
 
-    public String getDateofBirth() {
-        return DateofBirth;
+    public String getDOB() {
+        return DOB;
     }
 
-    public void setDateofBirth(String dateofBirth) {
-        DateofBirth = dateofBirth;
+    public void setDOB(String DOB) {
+        this.DOB = DOB;
     }
 
     public String getBreed() {

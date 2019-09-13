@@ -1,29 +1,29 @@
 package com.kasun.tasteit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.rengwuxian.materialedittext.MaterialEditText;
-
-import java.util.Calendar;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class add_pet extends AppCompatActivity {
 
-    EditText etDate;
-    DatePickerDialog.OnDateSetListener setListner;
-
-    TextInputLayout familyname, breed, model, gender, nickname, age;
+    EditText familyname, model, age, nickname, dob, breed, gender;
     Button addpet;
+
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -31,57 +31,60 @@ public class add_pet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_pet);
 
-        familyname = (TextInputLayout) findViewById(R.id.familyname);
-        breed = (TextInputLayout) findViewById(R.id.breed);
-        model = (TextInputLayout) findViewById(R.id.model);
-        gender = (TextInputLayout) findViewById(R.id.gender);
-        nickname = (TextInputLayout) findViewById(R.id.nickname);
-        age = (TextInputLayout) findViewById(R.id.age);
 
+        familyname = (EditText) findViewById(R.id.familyname);
+        model = (EditText) findViewById(R.id.model);
+        age = (EditText) findViewById(R.id.age);
+        nickname = (EditText) findViewById(R.id.nickname);
+        dob = (EditText) findViewById(R.id.dob);
+        breed = (EditText) findViewById(R.id.breed);
+        gender = (EditText) findViewById(R.id.gender);
 
+        addpet = (Button) findViewById(R.id.addpet);
 
+        //Init Firebase
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference table_Pet = database.getReference("Pet");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        etDate = findViewById(R.id.et_date);
-
-        Calendar calendar = Calendar.getInstance();
-
-        final int year = calendar.get(Calendar.YEAR);
-        final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-        etDate.setOnClickListener(new View.OnClickListener() {
+        addpet.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(add_pet.this, android.R.style.Theme_Holo_Light_Dialog_MinWidth,setListner,year,month,day);
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                datePickerDialog.show();
+            public void onClick(View view) {
+                final ProgressDialog mDialog = new ProgressDialog(add_pet.this);
+                mDialog.setMessage("Please Waiting...");
+                mDialog.show();
+
+                table_Pet.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                        //Check if already user phone in the database
+                        if(dataSnapshot.child(nickname.getText().toString()).exists())
+                        {
+                            mDialog.dismiss();
+                            Toast.makeText(add_pet.this, "Data Field already Registered!", Toast.LENGTH_SHORT).show();
+                        }
+
+                        else
+                        {
+                            mDialog.dismiss();
+                            Pet pet = new Pet(familyname.getText().toString(),model.getText().toString(),age.getText().toString(),nickname.getText().toString(),dob.getText().toString(),breed.getText().toString(),gender.getText().toString());
+                            table_Pet.child(nickname.getText().toString()).setValue(pet);
+
+                            Toast.makeText(add_pet.this, "Data Added Successfully!", Toast.LENGTH_SHORT).show();
+                            finish();
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
 
-        setListner = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                month = month + 1;
-                String date = day + "/" + month + "/" + year;
-                etDate.setText(date);
-            }
-        };
     }
 }
+
