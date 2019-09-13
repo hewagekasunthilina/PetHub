@@ -26,6 +26,8 @@ public class insert_pet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_pet);
 
+        setTitle("Add New Pet");
+
         familyname = (EditText) findViewById(R.id.familyname);
         model = (EditText) findViewById(R.id.model);
         age = (EditText) findViewById(R.id.age);
