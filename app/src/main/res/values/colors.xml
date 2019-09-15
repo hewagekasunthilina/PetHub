@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#00251a</color>
     <color name="colorAccent">#39796b</color>
 
-    <color name="btnSignUp">#39796b</color>
+    <color name="btnSignUp">#8CF0DA</color>
     <color name="btnSignActive">#A9d440</color>
 
     <color name="btnSignIn">#39796b</color>
@@ -12,11 +12,15 @@
     <color name="overlayBackground">#7f333639</color>
     <color name="overlayActionBar">#0e0d0e</color>
 
+    <color name="black_semi_transparent">#82000000</color>
+
+
+
 
     <!-- IT17059428 Amarsinghe A.A.S.M -->
 
 
-    <color name="form">#39796b</color>
+    <color name="form">#95F0D6</color>
     <color name="formhint">#00251a</color>
     <color name="formName">#069941</color>
 

@@ -20,9 +20,12 @@
     <string name="menu_send">Send</string>
 
     <string name="txtdashboard">My Dashboard</string>
-    <string name="pet_manager">Manage Pets</string>
-    <string name="food_manager">Manage Foods</string>
+    <string name="pet_manager">Pets</string>
+    <string name="food_manager">Foods</string>
     <string name="equipment_manager">Equipments</string>
+    <string name="medical_manager">Medicines</string>
+    <string name="feedback_manager">Feedbacks</string>
+    <string name="contact_manager">Contacts</string>
 
     <string name="sign_in_button">Sign In</string>
     <string name="sign_up_button">Sign Up</string>
