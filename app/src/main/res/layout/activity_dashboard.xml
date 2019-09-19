@@ -141,6 +141,7 @@
                         android:src="@drawable/equipment" />
 
                     <TextView
+                        android:id="@+id/arr3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -242,7 +243,7 @@
                         android:src="@drawable/add_new" />
 
                     <TextView
-                        android:id="@+id/arr3"
+                        android:id="@+id/arr2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"

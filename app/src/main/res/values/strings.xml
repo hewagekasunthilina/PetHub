@@ -60,6 +60,15 @@
     <string name="btnscarfs">SCARFS</string>
     <string name="categoryName">CATEGORY VIEW</string>
 
+    <string name="category_dashboard">Equipment Dashboard</string>
+
+    <string name="cages">Cages</string>
+    <string name="collar">Collars</string>
+    <string name="toys">Toys</string>
+    <string name="scarf">Scarfs</string>
+    <string name="chain">Chain</string>
+    <string name="aquarium">Aquariums</string>
+
 
     <!-- IT 18165258 Rajapakshe R.M.P.R.L-->
 

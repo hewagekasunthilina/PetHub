@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class dashboard extends AppCompatActivity {
@@ -30,12 +28,12 @@ public class dashboard extends AppCompatActivity {
             }
         });
 
-        txtbtn2 = (TextView) findViewById(R.id.arr1);
+        txtbtn2 = (TextView) findViewById(R.id.arr2);
         txtbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(dashboard.this, medicine_addItems.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(dashboard.this, insert_pet.class);
+                startActivity(intent2);
             }
         });
 
@@ -43,8 +41,8 @@ public class dashboard extends AppCompatActivity {
         txtbtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(dashboard.this, insert_pet.class);
-                startActivity(intent2);
+                Intent intent3 = new Intent(dashboard.this, equipment_dashboard.class);
+                startActivity(intent3);
             }
         });
     }
